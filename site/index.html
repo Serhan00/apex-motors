@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0e17">
+  <meta name="description" content="Apex Motors — 120+ inspected vehicles, transparent out-the-door pricing, instant financing estimates and no-pressure concierge service.">
+  <title>Apex Motors · Vehicle Inventory</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>(function(){try{var t=localStorage.getItem('apex-theme');if(!t){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+</head>
+<body data-page="inventory" data-concierge>
+  <div class="app">
+    <header class="appbar">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/img/logo.png" alt="Apex Motors logo">
+        <span class="brand__text"><strong>Apex Motors</strong><small>Inventory</small></span>
+      </a>
+      <div class="appbar__actions">
+        <button class="icon-btn" data-theme-toggle type="button" aria-label="Toggle colour theme">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/img/avatar.jpg" alt="Your profile">
+          <span class="status-dot"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Greeting & advisor spotlight -->
+      <section class="section" style="padding-bottom:8px">
+        <div class="row-between" style="margin-bottom:8px">
+          <span class="hero-badge"><span class="pulse-dot"></span>120+ Inspected Vehicles In Stock</span>
+          <span class="row accent t-label-sm"><span class="material-symbols-outlined" style="font-size:18px">verified</span>Apex Certified</span>
+        </div>
+        <h1 class="t-headline" style="margin:0">Find Your Next Drive</h1>
+        <div class="row" style="margin-top:6px;gap:8px">
+          <span class="material-symbols-outlined accent" style="font-size:18px">handshake</span>
+          <p class="t-body-sm silver" style="margin:0">Curated &amp; priced transparently by Senior Advisor <strong style="color:var(--text)">Alex Vance</strong></p>
+        </div>
+      </section>
+
+      <!-- Search & filter -->
+      <section class="section section--tight">
+        <div class="searchbar">
+          <label class="search-field">
+            <span class="sr-only">Search inventory</span>
+            <span class="material-symbols-outlined">search</span>
+            <input class="input input--search" id="vehicle-search" type="text" placeholder="Search make or model (Tesla, BMW, Toyota...)" autocomplete="off">
+          </label>
+          <button class="icon-btn" type="button" aria-label="Filter parameters" style="height:48px;width:48px;border-radius:var(--radius-lg)">
+            <span class="material-symbols-outlined">tune</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Affordability pills -->
+      <section class="section section--flush" style="padding-top:8px;padding-bottom:8px">
+        <div class="filter-row">
+          <button class="filter-pill is-active" data-filter="all" type="button">All Prices</button>
+          <button class="filter-pill" data-filter="under-15k" type="button">Under $15k <span class="muted">(Budget)</span></button>
+          <button class="filter-pill" data-filter="15k-30k" type="button">$15k – $30k <span class="muted">(Mid-Range)</span></button>
+          <button class="filter-pill" data-filter="30k-plus" type="button">$30k+ <span class="muted">(Premium)</span></button>
+          <button class="filter-pill" data-filter="low-monthly" type="button"><span class="material-symbols-outlined">bolt</span> Low Monthly <span class="tertiary" style="font-weight:700">($199/mo)</span></button>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="section section--flush" style="padding-top:8px">
+        <div class="row-between pad-x" style="margin-bottom:8px">
+          <span class="t-title" style="color:var(--text)">Categories</span>
+          <span class="t-label-sm accent">Browse All (5)</span>
+        </div>
+        <div class="cat-row">
+          <button class="cat-chip" data-category="electric" type="button">
+            <span class="cat-chip__icon"><span class="material-symbols-outlined">electric_car</span></span>
+            <strong>EV &amp; Hybrid</strong><span class="t-body-sm">38 units</span>
+          </button>
+          <button class="cat-chip" data-category="sedan" type="button">
+            <span class="cat-chip__icon"><span class="material-symbols-outlined">directions_car</span></span>
+            <strong>Sedans</strong><span class="t-body-sm">42 units</span>
+          </button>
+          <button class="cat-chip" data-category="suv" type="button">
+            <span class="cat-chip__icon"><span class="material-symbols-outlined">garage_home</span></span>
+            <strong>SUVs</strong><span class="t-body-sm">27 units</span>
+          </button>
+          <button class="cat-chip" data-category="coupe" type="button">
+            <span class="cat-chip__icon"><span class="material-symbols-outlined">sports_score</span></span>
+            <strong>Coupes</strong><span class="t-body-sm">11 units</span>
+          </button>
+          <button class="cat-chip" data-category="compact" type="button">
+            <span class="cat-chip__icon"><span class="material-symbols-outlined">commute</span></span>
+            <strong>Compacts</strong><span class="t-body-sm">14 units</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Featured inventory -->
+      <section class="row-between" style="padding:16px 16px 8px">
+        <div>
+          <h2 class="t-headline-sm" style="margin:0;color:var(--text)">Featured Inventory</h2>
+          <p class="t-body-sm silver" style="margin:0">Pre-inspected • Clean titles only</p>
+        </div>
+        <span class="chip"><span class="material-symbols-outlined">swap_vert</span>Recommended</span>
+      </section>
+
+      <section class="vehicle-list">
+        <!-- Tesla Model 3 -->
+        <article class="vehicle-card" data-category="electric" data-price="34900" data-title="2023 Tesla Model 3 Long Range">
+          <div class="vehicle-card__media">
+            <img src="assets/img/car-tesla.jpg" alt="2023 Tesla Model 3 Long Range">
+            <div class="media-badges">
+              <span class="chip chip--accent"><span class="material-symbols-outlined">trending_down</span>Great Deal −$1,800</span>
+            </div>
+            <div class="media-actions">
+              <button class="like-btn" data-like type="button" aria-label="Save vehicle"><span class="material-symbols-outlined">favorite</span></button>
+            </div>
+          </div>
+          <div class="vehicle-card__body">
+            <div>
+              <div class="vehicle-card__eyebrow"><span>Apex ID #T3-994</span><span>•</span><span class="status">In Transit</span></div>
+              <h3 class="vehicle-card__title">2023 Tesla Model 3 Long Range</h3>
+            </div>
+            <div class="tag-row">
+              <span class="spec-pill"><span class="material-symbols-outlined">speed</span>18,200 mi</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">battery_charging_full</span>358 mi Range</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">electric_bolt</span>Dual Motor AWD</span>
+            </div>
+            <div class="vehicle-card__price">
+              <div>
+                <span class="label">Cash Out-the-Door</span>
+                <div class="value">$34,900</div>
+              </div>
+              <div class="right">
+                <span class="chip chip--soft">Estimated Lease</span>
+                <div class="metric">$410<span>/mo</span></div>
+              </div>
+            </div>
+            <div class="vehicle-card__actions">
+              <a class="btn btn--secondary" href="vehicle-details.html"><span class="material-symbols-outlined">visibility</span>View Details</a>
+              <button class="btn btn--primary" data-testdrive type="button"><span class="material-symbols-outlined">key</span>Test Drive</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- BMW 330i -->
+        <article class="vehicle-card" data-category="sedan" data-price="29800" data-title="2022 BMW 330i xDrive">
+          <div class="vehicle-card__media">
+            <img src="assets/img/car-bmw.jpg" alt="2022 BMW 330i xDrive">
+            <div class="media-badges">
+              <span class="chip"><span class="material-symbols-outlined">verified_user</span>Certified Pre-Owned</span>
+            </div>
+            <div class="media-actions">
+              <button class="like-btn" data-like type="button" aria-label="Save vehicle"><span class="material-symbols-outlined">favorite</span></button>
+            </div>
+          </div>
+          <div class="vehicle-card__body">
+            <div>
+              <div class="vehicle-card__eyebrow"><span>Apex ID #BM-104</span><span>•</span><span class="status">On Showroom Floor</span></div>
+              <h3 class="vehicle-card__title">2022 BMW 330i xDrive</h3>
+            </div>
+            <div class="tag-row">
+              <span class="spec-pill"><span class="material-symbols-outlined">speed</span>24,500 mi</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">swipe_left_alt</span>xDrive AWD</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">local_gas_station</span>34 MPG Hwy</span>
+            </div>
+            <div class="vehicle-card__price">
+              <div>
+                <span class="label">Cash Out-the-Door</span>
+                <div class="value">$29,800</div>
+              </div>
+              <div class="right">
+                <span class="chip chip--soft">Finance from 3.9%</span>
+                <div class="metric">$355<span>/mo</span></div>
+              </div>
+            </div>
+            <div class="vehicle-card__actions">
+              <a class="btn btn--secondary" href="vehicle-details.html"><span class="material-symbols-outlined">visibility</span>View Details</a>
+              <button class="btn btn--primary" data-testdrive type="button"><span class="material-symbols-outlined">key</span>Test Drive</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Toyota RAV4 -->
+        <article class="vehicle-card" data-category="suv" data-price="24500" data-title="2021 Toyota RAV4 Hybrid XLE">
+          <div class="vehicle-card__media">
+            <img src="assets/img/car-rav4.jpg" alt="2021 Toyota RAV4 Hybrid XLE">
+            <div class="media-badges">
+              <span class="chip"><span class="material-symbols-outlined">thumb_up</span>High Reliability Score</span>
+            </div>
+            <div class="media-actions">
+              <button class="like-btn" data-like type="button" aria-label="Save vehicle"><span class="material-symbols-outlined">favorite</span></button>
+            </div>
+          </div>
+          <div class="vehicle-card__body">
+            <div>
+              <div class="vehicle-card__eyebrow"><span>Apex ID #TY-442</span><span>•</span><span class="status">1-Owner Carfax</span></div>
+              <h3 class="vehicle-card__title">2021 Toyota RAV4 Hybrid XLE</h3>
+            </div>
+            <div class="tag-row">
+              <span class="spec-pill"><span class="material-symbols-outlined">speed</span>36,000 mi</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">eco</span>40 MPG Combined</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">airline_seat_recline_extra</span>Sunroof &amp; Safety+</span>
+            </div>
+            <div class="vehicle-card__price">
+              <div>
+                <span class="label">Cash Out-the-Door</span>
+                <div class="value">$24,500</div>
+              </div>
+              <div class="right">
+                <span class="chip chip--soft">Best Family Value</span>
+                <div class="metric">$289<span>/mo</span></div>
+              </div>
+            </div>
+            <div class="vehicle-card__actions">
+              <a class="btn btn--secondary" href="vehicle-details.html"><span class="material-symbols-outlined">visibility</span>View Details</a>
+              <button class="btn btn--primary" data-testdrive type="button"><span class="material-symbols-outlined">key</span>Test Drive</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Honda Civic -->
+        <article class="vehicle-card" data-category="compact" data-price="17200" data-title="2020 Honda Civic Sport">
+          <div class="vehicle-card__media">
+            <img src="assets/img/car-civic.jpg" alt="2020 Honda Civic Sport">
+            <div class="media-badges">
+              <span class="chip"><span class="material-symbols-outlined">price_check</span>Affordability Pick</span>
+            </div>
+            <div class="media-actions">
+              <button class="like-btn" data-like type="button" aria-label="Save vehicle"><span class="material-symbols-outlined">favorite</span></button>
+            </div>
+          </div>
+          <div class="vehicle-card__body">
+            <div>
+              <div class="vehicle-card__eyebrow"><span>Apex ID #HD-201</span><span>•</span><span>Zero Accidents</span></div>
+              <h3 class="vehicle-card__title">2020 Honda Civic Sport</h3>
+            </div>
+            <div class="tag-row">
+              <span class="spec-pill"><span class="material-symbols-outlined">speed</span>42,100 mi</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">settings</span>Paddle Shifters</span>
+              <span class="spec-pill"><span class="material-symbols-outlined">smart_display</span>Apple CarPlay</span>
+            </div>
+            <div class="vehicle-card__price">
+              <div>
+                <span class="label">Cash Out-the-Door</span>
+                <div class="value">$17,200</div>
+              </div>
+              <div class="right">
+                <span class="chip chip--soft">Apex Tier 1 Rate</span>
+                <div class="metric">$199<span>/mo</span></div>
+              </div>
+            </div>
+            <div class="vehicle-card__actions">
+              <a class="btn btn--secondary" href="vehicle-details.html"><span class="material-symbols-outlined">visibility</span>View Details</a>
+              <button class="btn btn--primary" data-testdrive type="button"><span class="material-symbols-outlined">key</span>Test Drive</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Concierge drawer -->
+    <aside class="concierge">
+      <div class="concierge__card">
+        <div class="row" style="gap:10px;min-width:0">
+          <div class="cat-chip__icon"><span class="material-symbols-outlined">support_agent</span></div>
+          <div class="stack-xs" style="min-width:0">
+            <span class="t-label-md" style="color:var(--text)">Questions about rates?</span>
+            <span class="t-body-sm silver">Alex is online • Avg reply &lt; 2m</span>
+          </div>
+        </div>
+        <div class="row" style="gap:6px;flex-shrink:0">
+          <a class="icon-btn" href="tel:5552342886" aria-label="Call Alex Vance"><span class="material-symbols-outlined">call</span></a>
+          <a class="btn btn--primary btn--sm" href="contact.html"><span class="material-symbols-outlined">chat</span>Chat</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <nav class="tabbar" aria-label="Primary">
+    <a class="tab is-active" data-path="inventory" href="index.html"><span class="material-symbols-outlined">directions_car</span><span>Inventory</span></a>
+    <a class="tab" data-path="detail" href="vehicle-details.html"><span class="material-symbols-outlined">calculate</span><span>Detail</span></a>
+    <a class="tab" data-path="services" href="services.html"><span class="material-symbols-outlined">build</span><span>Services</span></a>
+    <a class="tab" data-path="support" href="contact.html"><span class="material-symbols-outlined">support_agent</span><span>Support</span></a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="material-symbols-outlined filled">check_circle</span>
+    <span data-toast-message>Saved</span>
+  </div>
+
+  <script src="assets/app.js"></script>
+  <script>
+    // Test-drive quick action (inventory specific)
+    document.querySelectorAll('[data-testdrive]').forEach(function (btn) {
+      btn.addEventListener('click', function () { window.showToast('Test drive request sent — Alex will confirm shortly'); });
+    });
+  </script>
+</body>
+</html>
